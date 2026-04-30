@@ -6,10 +6,7 @@
  * See LICENSE for the license information
  */
 
-#include "teaser_utils/fpfh.h"
-#include <pcl/features/normal_3d.h>
-#include "teaser/utils.h"
-
+#include "quatro/fpfh.h"
 
 teaser::FPFHCloudPtr teaser::FPFHEstimation::computeFPFHFeatures(
     const teaser::PointCloud& input_cloud, double normal_search_radius, double fpfh_search_radius) {
