@@ -1,3 +1,13 @@
+# Install Quatro as lib
+
+```
+git clone https://github.com/TMANVIT/Quatro_no_ROS.git
+cd Quatro_no_ROS
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+make -j$(nproc)
+sudo make install
+```
 # Quatro 
 
 Official page of *"A Single Correspondence Is Enough: Robust Global Registration to Avoid Degeneracy in Urban Environments"*, which is accepted @ ICRA'22. **NOTE that this repository is the re-implementation, so it is not exactly the same as the original version**.   

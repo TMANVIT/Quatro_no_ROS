@@ -56,7 +56,8 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_L
 endif()
 
 
-install(DIRECTORY include/quatro/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+# install(DIRECTORY include/quatro DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+# install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quatro)
 
 install(TARGETS quatro
         EXPORT quatroTargets
@@ -89,3 +90,5 @@ install(FILES
         "${CMAKE_CURRENT_BINARY_DIR}/quatroConfigVersion.cmake"
         DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/quatro
 )
+
+install(DIRECTORY include/quatro DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
